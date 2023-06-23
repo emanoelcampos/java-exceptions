@@ -12,10 +12,9 @@ public class CurrentAccount extends Account implements Taxable{
     }
 
     @Override
-    public boolean withdrawFunds(double amount) {
-        //double withdrawFundsWithTax = amount + 0.2;
+    public void withdrawFunds(double amount) throws InsufficientFundsException{
         amount += 0.2;
-        return super.withdrawFunds(amount);
+        super.withdrawFunds(amount);
     }
 
     @Override

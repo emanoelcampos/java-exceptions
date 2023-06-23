@@ -41,20 +41,16 @@ public abstract class Account {
 
     public abstract void depositFunds(double amount);
 
-    public boolean withdrawFunds(double amount) {
-        if(this.balance >= amount) {
-            this.balance -= amount;
-            return true;
-        } else {
-            return false;
+    public void withdrawFunds(double amount) throws InsufficientFundsException{
+
+        if(this.balance < amount) {
+            throw new InsufficientFundsException("Balance " + this.balance + ", Amount: " + amount);
         }
+        this.balance -= amount;
     }
 
-    public boolean transferFunds(Account destinationAccount, double amount) {
-        if(this.withdrawFunds(amount)) {
-            destinationAccount.depositFunds(amount);
-            return true;
-        }
-        return false;
+    public void transferFunds(Account destinationAccount, double amount)throws InsufficientFundsException {
+        this.withdrawFunds(amount);
+        destinationAccount.depositFunds(amount);
     }
 }
