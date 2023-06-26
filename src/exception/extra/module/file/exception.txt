@@ -1,0 +1,1 @@
+arquivo exception.txt criado utilizando a classe 'File' que invoca o método 'createNewFile();
