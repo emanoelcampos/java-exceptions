@@ -2,6 +2,8 @@
 
 Este repositório é dedicado ao quarto curso da formação de Java e Orientação a Objetos oferecido pela Alura em colaboração com o programa One da Oracle. Durante o curso, adquiri conhecimentos sobre exceções e os fundamentos essenciais dessa linguagem de programação.
 
+<div align="center" ><img src="https://github.com/emanoelcampos/programa-one-oracle/assets/68448029/ab736b12-62a0-4f05-90e0-380d5e756c41" width="400"></div>
+
 ## Os assuntos abordados no curso incluem:
 
 O curso foi dividido em diversos módulos, cada um com seus respectivos exercícios, atividades e um desafio durante o curso.
